@@ -45,7 +45,7 @@ Li-Po
 LFP
 Pb
 
-##### Comparison table
+#### Comparison
 
 | ...                      | Li-Ion    | Li-Po     | LFP      | Pb      |
 | -                        | -         | -         | -        | -       |
@@ -59,20 +59,24 @@ In my personal build, I have opted for Li-Ion. More specifically I'm using Samsu
 
 Additionally, the use of 18650 cells (in my opinion) is suited to the form factor - with clearance and spacing for airflow a single 18650 cell horizontally is ~0.5U high. This makes scaling the pack very simple and space efficient.
 
-#### Li-Ion (18650/21700 cells)
+##### Li-Ion (18650/21700 cells)
 
 While many people may be hesitant to use these cells due to their potential fire/explosion safety hazard, if treated correctly I would argue that these are one of the best options available for this use case. They have amazing energy density and specific energy. Once assembled into a pack they are less easy to damage than their Li-Po sibling due to the metal casing on the cells.
 Additionally, with their metal casings Li-Ion cells do not puff/expand like Li-Po do, and often have better thermal performance as well.
 
-#### Li-Po
+##### Li-Po
 
 While their performance is pretty much on par with Li-Ion, they can excel at high discharge. For this use case, it's not at all necessary that we can use all the energy in a matter of a few minutes (unless you really just want a few minutes of failure time).
 Their polymer jacket is susceptible to puncture. In this event, the cell can puff, vent hazardous gasses and even catch fire. As the cells age they can also puff up which may cause improper pressure on other components and if there are sharp items nearby could cause spontateous puncture.
 For this reason these are my 3rd choice.
 
-#### LiFePO4 (LFP)
+##### LiFePO4 (LFP)
 
 Similarly to Li-Ion, these are available in 18650 cell format. 
+
+#### BMS
+
+For battery management, I've found a lot of people online using the JKBMS products for large diy solar installations. While it is probably overkill for this use case, the configurability and monitoring/telemetry is what i'm particularly after. People have written integrations for home-assistant!
 
 ### Power Input
 
